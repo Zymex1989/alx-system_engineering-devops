@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -e "Local variables:\n$(set | grep -v '^_=')" | tee -a >(env | grep -v _=)
