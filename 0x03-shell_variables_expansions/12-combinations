@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "${{a..z}}\{2\} | grep -v oo"
+echo -e "${{a..z}}\{2\} | tr ' ' '\n' | grep -v oo"
