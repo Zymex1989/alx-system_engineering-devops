@@ -1,2 +1,2 @@
 #!/bin/bash
-dirs=$(echo $PATH | tr -d ':')
+dirs=$(echo $PATH | tr ":" "\n" | wc -l -1)
