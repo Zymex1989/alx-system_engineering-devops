@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "Local variables:\n$(set | grep -v '^_=')" | cat - >(env | grep -v _=)
+echo -e $(set | grep -v '^_=') | cat - >(env | grep -v _=)
